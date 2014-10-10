@@ -106,10 +106,10 @@ class Board(object):
         sprite.set_position(
                 x_px + self.offset_x,
                 y_px + self.offset_y)
-        sprite.draw()
+        sprite.draw()   
 
     def check_bounds(self, x, y):
-        if not (0 <= x < self.width):
+        if not (0 <= x < self.width):   
             raise IndexError("%r is out of bounds of the board width: %d"%(x, self.width))
         if not (0 <= y < self.height):
             raise IndexError("%r is out of bounds of the board height: %d"%(y, self.width))
